@@ -57,8 +57,8 @@ const Page1 = () => {
         >
           <div className="flex justify-between items-center">
             <img src={logo} alt="LOGO" />
-            <button className="bg-black px-10 py-2 rounded-full border-[#F34235] border-[6px] text-[1em]">
-              <a href={resume} download="Soban Resume" className="text-white">
+            <button className="bg-black px-10 py-2 rounded-full border-[#F34235] border-[6px] text-[12px]">
+              <a href={resume} download="Soban Resume" className="text-white font-[12px]">
              Get Resume
               </a>
             </button>

@@ -2,10 +2,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
-
 const Page2 = () => {
- 
-
   gsap.registerPlugin(ScrollTrigger);
   // gsap.registerPlugin(_ScrollTrigger)
 
@@ -15,21 +12,21 @@ const Page2 = () => {
       textElements.forEach((element) => {
         gsap.set(element, {
           opacity: 0,
-          rotateX: -50
+          rotateX: -50,
         });
-        
+
         gsap.to(element, {
           scrollTrigger: {
             trigger: element,
             start: "top 80%", // Starts animation when element is 80% from top of viewport
             end: "top 20%",
             toggleActions: "play none none reverse",
-            markers: false
+            markers: false,
           },
           opacity: 1,
           rotateX: 0,
           duration: 1,
-          ease: "power2.out"
+          ease: "power2.out",
         });
       });
     });
@@ -71,7 +68,6 @@ const Page2 = () => {
           WORKS!
         </h1>
       </div>
-      
     </div>
   );
 };
