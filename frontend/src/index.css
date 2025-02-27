@@ -1,0 +1,48 @@
+@font-face {
+  font-family: anzo1;
+  src: url(./assets/anzo1.woff2);
+}
+@font-face {
+  font-family: anzo2;
+  src: url(./assets/anzo2.woff2);
+}
+@font-face {
+  font-family: anzo3;
+  src: url(./assets/anzo3.woff2);
+}
+@font-face {
+  font-family: anzo4;
+  src: url(./assets/anzo4.woff2);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #F3F4F6
+}
+#page1-in {
+   position: relative; 
+  perspective: 2000px;
+}
+#section-2{
+   position: relative; 
+  perspective: 4000px;
+}
+#tiltDiv {
+  /* background-color: brown; */
+   width: fit-content; 
+}
+
+#rotate-text{
+  transform-origin:100% 70% ;
+}
